@@ -1,0 +1,262 @@
+SELECTORS:
+...............
+selector{property1:value1:property2:value2;.....;}
+ex-
+h1{color:orange;font-size:12px;}
+.................................
+css selector:
+...................
+which is used to select the content you want to style
+
+different types of selectors
+1.css element selector
+2.css id selector
+3.css class selector
+4.css universal selector
+5.css class selector
+
+1.css element selector:
+.........................
+the elemt selector selects the html element by name .
+
+
+2.css id selector:
+......................
+selects the id attriute of an html element to select a specific element.
+unique within the page.
+written with the hash character(#)followed by the id of an element.
+
+3.css class selector:
+.........................
+
+the class selector selects the html elements with a specific class attributes
+used with a period character.(full stop symbol)followed by the class name
+
+4. css class selector for specific element:
+.........................................
+
+if you want to specify that only one specific element 
+
+
+
+
+
+5.css universal selector:
+...........................
+
+used as a wilsdcar character
+it selects all the elements in the pages
+
+6.css group selector:
+........................
+
+used to select all the elemnts with the same style definations
+used to minimize the code
+commas are used to seperate each selector in grouping
+
+ex without group selector
+..............................
+
+h1{
+	text-alig:center;
+	color:blue;
+}
+h2{
+	text-align:center;
+	color:blue;
+}
+p{
+	text-align:center;
+	color:blue;
+}
+
+
+adding css to html files:
+.............................
+
+1.Inline css:
+.............
+define css properties using style attribute in the html elements 
+2.Internal or Embedded Css:
+.............................
+define css using <style> tag in <head> section
+3.External Css:
+................
+ define all css properties in a seperate .css file,and then include the file with html using tag in section.
+
+
+
+INLINE CSS:
+...........
+ used to apply css in a single element
+need to use style attribute within html element
+an use as many properties as we want but each property should be seperated as semicolon(;)
+
+
+ex:
+<h3 style="color:red;
+	   font-style:italic;
+	   text-align:center;
+	   font-size:50px;
+	   padding-top:25px;">Learning html using inline css</h3>
+
+
+Disadvantages of Inline CSS:
+...............................
+
+1.you cannot use quotations within inline css.if you use quotations the browser will interuot this as an en of your style
+2.these styles cannot be reused anywhere else
+3.these styles are tough to be edited because they are not stored at a single place.
+4.it not possible to style pseudo-codes and pseudo classes with inline css..
+5.inline css doesnot provide browser cache advantages
+
+
+
+2.INTERNAL CSS;
+................
+
+comntains the css properties for a webpage in<head> section of html document
+to use internal css, we can use class and id attributes
+use internal css to apply a style for a single html page
+
+
+3.EXTERNAL CSS:
+..................
+
+
+an external css contains a seperte css file which only comtains style code using the class name,id name,tag name.
+using <link>tag
+if  we have multipe html pages for an application and which use similar css, then we can use external cs
+there are two files need to create to apply external css.
+
+
+steps
+......
+1.first create the html file.
+2.create a css file and save it using the .css extension9this file only will only contain the styling code)
+3.link the css file in your html file using tag in html header section of html document
+
+
+COMMONLY USED CSS PROPERTIES:
+................................
+1.background-color:it defines the background color of the element.
+syntax:
+	background-color:red;
+2.color: it defines the text of the element
+syntax:
+	color:ligtgreen;
+3.padding:it defines the space between content and the border
+syantax:
+	padding:20px;
+
+4.margin: it creates space around an element.
+syntax:
+	margin:30px;
+	margin-left
+
+5. font-family:font family defines  font for a particular elemnt.
+syntax:
+	font-family:cursive;
+6.font-size: font size defines a font size for a particular element.
+syntax:
+	font-size:50px;
+7.text-align:it is used to align the text in a select position
+syntax:
+	text-align:left;
+
+
+CSS PROPERTIES:
+................
+1.cSS BACKGROUND: used to define the background effects on elemnts
+
+1.background-color
+2.background-image
+3.background-repeat
+4.background-attachment
+5.background-position
+
+css background attachment:
+..........................
+
+used to specify idf the background image is fixed or scroll with the rest of the page in browser window
+
+css background position:
+............................
+
+the background position property is used to define the initial position of the background image 
+by default the background image is placed on the top left of the web page
+ex:
+	background-position:bottom right;
+
+CSS BORDER:
+..............
+
+set the border of an element
+1.border style
+2.border-color
+3.border-width
+4.border-radius
+.................
+1.css border-style:
+used to specify the border type which you want to display on the wrb page
+
+2.css border color:
+name: it specifies the color name.For example:"red".
+RGB:it specifies the RGB value of the color.for example:"rgb(255,0,0)".
+Hex: it specifies the hex value of the color.For example:"#ff0000".
+....there is also a border color named "transparent"...........
+
+
+CSS DISPLAY:
+.............
+
+used to control the layout of the element
+
+css display values:
+there are following css display values which are commonly used.
+1.display: inline;
+2.display: inline-block;
+3.display: block;
+4.display: run-in;
+5.display: none;
+
+
+1.css displayinline:
+......................
+
+the inline element takes the required width only .It doesnot force the line break so the flow of text doesn't break in inline example.
+
+the inline elements are:
+
+<span>
+<a>
+<em>
+<b>
+
+2.css display inline-block:
+............................
+similar to inline element but the difference is that you are able to set the width and height.
+
+
+4.css display none:
+....................
+the "none" value totally removes the element from the page.
+It will not take any space
+
+
+CSS FLOAT:
+...........
+1.clear-The clear property is used to avoid elements after the floating elememnts which flow around it.left,right,both,none,inherit
+
+2.float-it specifies whether the box should float or not.left,right,none,inherit
+
+CSS FLOAT PROPERTY VALUES:
+............................
+
+none-it specifies that the element is not floated and will be displayed just where it occurs in the text.this is a default value.
+left-it is used to float the elemnt to the left
+right-it is used to float the element to the right
+initial-it sets the property to its initial values
+inherit=it is used to inherit this property from its parent element.
+
+
